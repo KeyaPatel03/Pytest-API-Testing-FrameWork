@@ -1,0 +1,13 @@
+{
+"id": 0,
+"category": {
+"name": "Cat"
+},
+"name": "Doggie",
+"tags": [
+{
+"name": "CCaatt"
+}
+],
+"status": "Available"
+}
