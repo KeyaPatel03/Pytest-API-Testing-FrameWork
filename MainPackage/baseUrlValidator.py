@@ -8,7 +8,8 @@ def validate_url(base_url):
     try:
         response = requests.head(base_url)
         response.raise_for_status()  # Raise an exception for 4xx or 5xx status codes
-        print(f"URL '{base_url}' is valid.")
+        if base_url == "https://petstore.swagger.io":
+            print(f"URL '{base_url}' is valid.")
         return True
     except requests.exceptions.RequestException as e:
         print(f"Error validating URL '{base_url}': {e}")
